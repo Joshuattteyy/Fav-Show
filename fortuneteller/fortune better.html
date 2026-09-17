@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title> Show Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+     <h1> My TV Show Fortune Teller </h1>
+
+
+<img src="show.jpg" width="300">
+
+
+<p>Pick a show your fortune comes from</p>
+<form action="" method="get">
+<label for="email">Your email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+<br><br>
+<label for="number">Pick a number:</label>
+<input type="number" id="number" name="number">
+<br><br>
+<label for="date">Pick a date:</label>
+<input type="date" id="date" name="date">
+<br><br>
+<label for="show">Choose a show:</label>
+<select id="show" name="show">
+<option>Beauty in Black</option>
+<option>Dexter</option>
+<option>Victorious</option>
+</select>
+<br><br>
+<label for="message">Tell the fortune teller your mood and favorite genre:</label>
+<textarea id="message" name="message" rows="4" cols="30"></textarea>
+<br><br>
+
+<script src="script.js"></script>
+
+    <h1>
+      Fortune Teller
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="Answerfield">Answer:</label>
+      <input type="text" id="Answerfield" name="Answer" placeholder="your favorite tv show of all time">
+      <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
